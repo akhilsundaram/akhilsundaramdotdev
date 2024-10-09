@@ -7,7 +7,7 @@ export default function Home() {
       {/* Banner image at the top */}
       <div style={{ marginBottom: '20px' }}>
         <Image
-          src="/banner.jpg" // Path to the banner image in the public/ directory
+          src="/banner.png" // Path to the banner image in the public/ directory
           alt="Banner"
           width={1200} // Adjust the width based on your banner image dimensions
           height={300} // Adjust the height accordingly
