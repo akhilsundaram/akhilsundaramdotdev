@@ -3,8 +3,8 @@ import { Typography, Container } from '@mui/material';
 export default function Resume() {
   return (
     <Container>
-      <Typography variant="h2" align="center" gutterBottom>
-        My Resume
+      <Typography variant="h3" align="center" gutterBottom>
+        Resume
       </Typography>
       {/* Embed the resume PDF directly in the page */}
       <embed 
