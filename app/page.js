@@ -12,7 +12,7 @@ export default function Home() {
       {/* Round bordered image under the name */}
       <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
         <Image
-          src="/profile.jpg" // Path to the image in the public/ directory
+          src="/profile.jpg" // Path to the image in the public/ directory.
           alt="Akhil Sundaram"
           width={150} // Adjust the width as necessary
           height={150} // Adjust the height as necessary
