@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
         <AppBar position="static">
           <Toolbar>
             <Typography variant="h6" style={{ flexGrow: 1 }}>
-              CS Grad @ UIUC | Ex-Senior Engineer in Devops @ Logmein/GoTo
+              CS Grad @ UIUC
             </Typography>
             <Button color="inherit" component={Link} href="/">
               Home
