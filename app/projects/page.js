@@ -1,4 +1,4 @@
-import { Typography, Grid, Card, CardMedia, CardContent, CardActionArea } from '@mui/material';
+import { Typography, Grid, Card, CardMedia, CardContent, CardActionArea, Container } from '@mui/material'; // Added Container import
 
 // Updated project data
 const projects = [
@@ -6,19 +6,19 @@ const projects = [
     name: 'Distributed Logger',
     description: 'A distributed log query system built with Golang.',
     image: '/default.png', // Placeholder for actual image in public folder
-    github: 'https://github.com/username/distributed-logger' // Replace with actual GitHub link
+    github: 'https://github.com/akhilsundaram' // Replace with actual GitHub link
   },
   {
     name: 'Cloud Agnostic Kubernetes',
     description: 'A Kubernetes deployment tool using Ansible and Python.',
     image: '/default.png', // Placeholder for actual image in public folder
-    github: 'https://github.com/username/cloud-agnostic-kubernetes'
+    github: 'https://github.com/akhilsundaram'
   },
   {
     name: 'Identity System using Blockchains',
     description: 'A decentralized, secure platform utilizing blockchains to create an identity datastore.',
     image: '/default.png', // Placeholder for actual image in public folder
-    github: 'https://github.com/username/identity-system-blockchain'
+    github: 'https://github.com/akhilsundaram'
   }
 ];
 
