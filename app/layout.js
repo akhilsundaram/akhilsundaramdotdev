@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { AppBar, Toolbar, Typography, Button, Container } from '@mui/material';
+import './globals.css';
 
 export default function RootLayout({ children }) {
   return (
