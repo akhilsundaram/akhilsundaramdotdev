@@ -7,7 +7,7 @@ export default function Home() {
         Akhil Sundaram
       </Typography>
       <Typography variant="body1" align="center">
-        Hi, I'm Akhil Sundaram, a graduate student in the department of Computer Science at University of Illinois Urbana-Champaign (UIUC). 
+        Hi, I&#39;m Akhil Sundaram, a graduate student in the department of Computer Science at University of Illinois Urbana-Champaign - UIUC. 
         I study distributed systems and storage/memory architectures. I also worked as a Senior Engineer at Logmein/GoTo for 4 years. 
       </Typography>
     </Container>

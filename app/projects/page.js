@@ -1,9 +1,9 @@
 import { Container, Typography, List, ListItem, ListItemText } from '@mui/material';
 
 const projects = [
-  { name: 'Project 1', description: 'A distributed log query system built with Golang' },
-  { name: 'Project 2', description: 'Cross-cloud migration framework with Terraform and Ansible' },
-  { name: 'Project 3', description: 'Patch management tool for Linux environments' }
+  { name: 'Distributed Logger', description: 'A distributed log query system built with Golang' },
+  { name: 'Cloud Agnostic Kubernetes', description: 'A Kubernetes deployment tool using Ansible and Python' },
+  { name: 'Identity System using Blockchains', description: 'A decentralized,secure platform utilizing blockchains to create an Identity datastore' }
 ];
 
 export default function Projects() {
