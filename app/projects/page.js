@@ -1,9 +1,25 @@
-import { Container, Typography, List, ListItem, ListItemText } from '@mui/material';
+import { Typography, Grid, Card, CardMedia, CardContent, CardActionArea } from '@mui/material';
 
+// Updated project data
 const projects = [
-  { name: 'Distributed Logger', description: 'A distributed log query system built with Golang' },
-  { name: 'Cloud Agnostic Kubernetes', description: 'A Kubernetes deployment tool using Ansible and Python' },
-  { name: 'Identity System using Blockchains', description: 'A decentralized,secure platform utilizing blockchains to create an Identity datastore' }
+  {
+    name: 'Distributed Logger',
+    description: 'A distributed log query system built with Golang.',
+    image: '/default.png', // Placeholder for actual image in public folder
+    github: 'https://github.com/username/distributed-logger' // Replace with actual GitHub link
+  },
+  {
+    name: 'Cloud Agnostic Kubernetes',
+    description: 'A Kubernetes deployment tool using Ansible and Python.',
+    image: '/default.png', // Placeholder for actual image in public folder
+    github: 'https://github.com/username/cloud-agnostic-kubernetes'
+  },
+  {
+    name: 'Identity System using Blockchains',
+    description: 'A decentralized, secure platform utilizing blockchains to create an identity datastore.',
+    image: '/default.png', // Placeholder for actual image in public folder
+    github: 'https://github.com/username/identity-system-blockchain'
+  }
 ];
 
 export default function Projects() {
@@ -12,16 +28,28 @@ export default function Projects() {
       <Typography variant="h2" align="center" gutterBottom>
         My Projects
       </Typography>
-      <List>
+      <Grid container spacing={4}>
         {projects.map((project, index) => (
-          <ListItem key={index}>
-            <ListItemText
-              primary={project.name}
-              secondary={project.description}
-            />
-          </ListItem>
+          <Grid item xs={12} sm={6} md={4} key={index}>
+            <Card>
+              <CardActionArea href={project.github} target="_blank" rel="noopener noreferrer">
+                <CardMedia
+                  component="img"
+                  height="140"
+                  image={project.image} // Display project image
+                  alt={project.name}
+                />
+                <CardContent>
+                  <Typography variant="h5">{project.name}</Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {project.description}
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
         ))}
-      </List>
+      </Grid>
     </Container>
   );
 }

@@ -1,4 +1,4 @@
-import { Container, Typography, Button } from '@mui/material';
+import { Typography, Container } from '@mui/material';
 
 export default function Resume() {
   return (
@@ -6,9 +6,13 @@ export default function Resume() {
       <Typography variant="h2" align="center" gutterBottom>
         My Resume
       </Typography>
-      <Button variant="contained" color="primary" href="/resume.pdf" target="_blank" fullWidth>
-        View My Resume (PDF)
-      </Button>
+      {/* Embed the resume PDF directly in the page */}
+      <embed 
+        src="/resume.pdf" // Path to the resume file in public folder
+        type="application/pdf"
+        width="100%" 
+        height="800px" // Adjust the height as necessary
+      />
     </Container>
   );
 }
