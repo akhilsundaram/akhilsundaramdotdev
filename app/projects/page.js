@@ -25,8 +25,8 @@ const projects = [
 export default function Projects() {
   return (
     <Container>
-      <Typography variant="h2" align="center" gutterBottom>
-        My Projects
+      <Typography variant="h4" align="center" gutterBottom>
+        things I build
       </Typography>
       <Grid container spacing={4}>
         {projects.map((project, index) => (
