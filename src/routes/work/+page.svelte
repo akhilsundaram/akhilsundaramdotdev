@@ -11,7 +11,7 @@
         ]
       },
       {
-        timeline: "July 2019 – Nov 2023",
+        timeline: "July 2019 - Nov 2023",
         company: "Logmein / GoTo",
         position: "Senior Engineer",
         details: [
@@ -63,7 +63,7 @@
   
   <style>
     .timeline-container {
-      margin: auto;
+      margin: 30px auto;
       max-width: 800px;
     }
   
