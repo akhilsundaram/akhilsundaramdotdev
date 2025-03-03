@@ -29,7 +29,7 @@
 <style>
 .resume-container {
     max-width: 800px;
-    margin: auto;
+    margin: 30px auto;
     padding: 0 1rem;
 }
 
