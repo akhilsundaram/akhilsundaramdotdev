@@ -63,7 +63,7 @@
   
   <style>
     .timeline-container {
-      margin: 80px auto;
+      margin: auto;
       max-width: 800px;
     }
   

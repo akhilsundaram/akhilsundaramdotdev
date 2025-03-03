@@ -65,7 +65,7 @@ let projects = [
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 1rem;
     max-width: 1200px;
-    margin: 80px auto; /* Adjust to avoid overlap with header/footer */
+    margin: auto; 
     padding: 0 1rem;
 }
 

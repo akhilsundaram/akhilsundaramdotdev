@@ -117,7 +117,7 @@
   <style>
     /* Add some space so it doesn't overlap with header/footer */
     .timeline-container {
-      margin: 80px auto; /* Adjust as needed */
+      margin: auto;
       max-width: 800px;
     }
   

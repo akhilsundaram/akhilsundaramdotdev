@@ -1,4 +1,4 @@
-<article class="max-w-3xl w-full mx-auto flex flex-col flex-grow pt-20 px-6 text-sm">
+<article class="max-w-3xl w-full mx-auto flex flex-col flex-grow  px-6 text-sm">
     <h1 class="text-4xl font-bold">{`$whoami`}</h1>
     <p class="mt-4">
         <span class="dull-text">I'm Akhil Sundaram, currently a graduate student at the University of Illinois Urbana-Champaign studying Computer Science. My focus over the past year has been on distributed computing, storage, real time systems, security, and systems in general.</span> 

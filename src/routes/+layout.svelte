@@ -53,9 +53,9 @@
 
 <main class="flex flex-col min-h-screen h-full bg-white dark:bg-black text-black dark:text-white font-mono px-6 overflow-hidden">
 	<!-- Navbar -->
-	<nav class="w-full max-w-3xl flex justify-between items-center py-4 fixed top-0 left-0 right-0 mx-auto bg-white dark:bg-black px-6 border-b border-gray-300 dark:border-gray-700">
+	<nav class=" w-full max-w-3xl flex justify-between items-center py-4 fixed top-0 left-0 right-0 mx-auto bg-white dark:bg-black px-6 border-b border-gray-300 dark:border-gray-700">
 	  <a href="/" class="font-bold text-lg">Akhil Sundaram</a>
-	  <div class="flex gap-4 text-gray-500 dark:text-gray-400 text-sm">
+	  <div class="flex flex-wrap gap-4  text-gray-500 dark:text-gray-400 text-sm">
 		<a href="/code">code</a>
 		<a href="/work">work</a>
 		<a href="/resume">resume</a>
@@ -66,7 +66,7 @@
 	</nav>
   
 	<!-- Page Content -->
-	<section>
+	<section class="mt-20">
 		{@render children()}
 	</section>
   

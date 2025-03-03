@@ -4,7 +4,7 @@
 
 <style>
 .notes-message {
-    margin-top: 80px; 
+    margin: auto; 
     text-align: center;
     font-size: 1.2rem;
     padding: 2rem;
