@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>404 - Lost in Space</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- You can include the same meta tags / SEO data if you like, 
+         or just keep it minimal for the 404 page. -->
+
+    <!-- Link to your Tailwind or app.css (adjust the path as needed) -->
+    <link rel="stylesheet" href="/app.css" />
+
+    <!-- Google Fonts (same as your app) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      html {
+        height: 100%;
+        overflow-y: auto;
+      }
+      body {
+        font-family: 'Geist Mono', monospace;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        z-index: 10;
+      }
+
+      /* You can keep or remove these h1 styles—just matching your app.html */
+      h1 {
+        font-size: 18px;
+      }
+
+      /* 404-specific styling */
+      .error-page {
+        text-align: center;
+        padding: 2rem;
+        margin-top: 80px;
+      }
+      .error-page h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      .error-page p {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="flex flex-col min-h-screen h-full bg-white dark:bg-black text-black dark:text-white font-mono px-6 overflow-hidden">
+      <!-- Navbar -->
+      <nav
+        class="w-full max-w-3xl flex justify-between items-center py-4 fixed top-0 left-0 right-0 mx-auto bg-white dark:bg-black px-6 border-b border-gray-300 dark:border-gray-700"
+      >
+        <a href="/" class="font-bold text-lg">Akhil Sundaram</a>
+        <div class="flex gap-4 text-gray-500 dark:text-gray-400 text-sm">
+          <a href="/code">code</a>
+          <a href="/work">work</a>
+          <a href="/resume">resume</a>
+          <a href="/school">courselog</a>
+          <a href="/notes">notes</a>
+          <!-- We’ll hook the clock update to this button as well -->
+          <button onclick="updateClock()" class="text-xl relative z-10">🌓</button>
+        </div>
+      </nav>
+
+      <!-- Page Content -->
+      <section class="w-full max-w-3xl mx-auto mt-20">
+        <div class="error-page">
+          <!-- 404 Content -->
+          <h1>404 - Oops, You Got Lost!</h1>
+          <p>This page is playing hide and seek — and it's winning.</p>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer
+        class="w-full max-w-3xl mx-auto text-sm py-4 border-t border-gray-300 dark:border-gray-700 mt-auto"
+      >
+        <div class="flex justify-between">
+          <p id="year">&copy; <!-- JS will fill year --> Akhil Sundaram, inspired by Michael Andreuzza</p>
+          <p id="clock"><!-- JS will fill time --></p>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Simple script to handle clock/year, no Svelte needed -->
+    <script>
+      function updateClock() {
+        const now = new Date();
+        document.getElementById('clock').textContent = now.toLocaleTimeString();
+      }
+      // Set the year in the footer
+      document.getElementById('year').innerHTML = `&copy; ${new Date().getFullYear()} Akhil Sundaram, inspired by Michael Andreuzza`;
+
+      // Initialize clock and set interval
+      updateClock();
+      setInterval(updateClock, 1000);
+    </script>
+  </body>
+</html>

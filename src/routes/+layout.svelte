@@ -8,6 +8,37 @@
 		year: new Date().getFullYear()
 	});
 
+	// holds your theme state
+	let isDark = false;
+
+
+	// Use onMount so this only runs in the browser
+	onMount(() => {
+		// Attempt to read from localStorage
+		const storedTheme = localStorage.getItem('theme');
+		console.log('onMount -> storedTheme:', storedTheme);
+		if (storedTheme === 'dark') {
+			isDark = true;
+			document.documentElement.classList.add('dark');
+		}
+	});
+
+	// Toggle function
+	function toggleTheme() {
+		isDark = !isDark;
+		document.documentElement.classList.toggle('dark', isDark);
+		console.log('toggleTheme -> isDark now', isDark);
+	}
+
+	// Runes effect: runs whenever `isDark` changes
+	$effect(() => {
+		console.log('Effect triggered: isDark changed to', isDark);
+		const themeToSet = isDark ? 'dark' : 'light';
+		console.log('Setting localStorage theme to', themeToSet);
+		localStorage.setItem('theme', themeToSet);
+	});
+	
+
 	function updateClock() {
 		const now = new Date();
 		st.time = now.toLocaleTimeString(); 
@@ -30,7 +61,7 @@
 		<a href="/resume">resume</a>
 		<a href="/school">courselog</a>
 		<a href="/notes">notes</a>
-		<button onclick={updateClock} class="text-xl relative z-10">🌓</button>
+		<button onclick={toggleTheme} class="text-xl relative z-10">🌓</button>
 	  </div>
 	</nav>
   
